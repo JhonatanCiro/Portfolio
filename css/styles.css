@@ -1,0 +1,149 @@
+:root {
+  --fondo: #0f0b1a;
+  --superficie: #1a1429;
+  --borde: #2d2347;
+  --texto: #e6e1f2;
+  --texto-suave: #a79fc0;
+  --morado: #8b5cf6;
+  --morado-claro: #a78bfa;
+}
+
+body {
+  background: var(--fondo);
+  color: var(--texto);
+  font-family: system-ui, -apple-system, "Segoe UI", Roboto, sans-serif;
+}
+
+h1, h2, h3, h4, h5, .navbar-brand {
+  font-family: Consolas, "Courier New", monospace;
+}
+
+h2 {
+  color: var(--morado-claro);
+  margin-bottom: 1rem;
+}
+
+h2::before {
+  content: "> ";
+  color: var(--morado);
+}
+
+a {
+  color: var(--morado-claro);
+}
+
+/* Barra de navegación */
+.navbar {
+  background: #0a0712;
+  border-bottom: 1px solid var(--morado);
+}
+
+.navbar-brand {
+  color: var(--morado-claro);
+}
+
+.navbar .nav-link {
+  color: var(--texto-suave);
+}
+
+.navbar .nav-link:hover,
+.navbar .nav-link.active {
+  color: #fff;
+}
+
+/* Encabezado con foto */
+.hero {
+  padding: 2rem 0 1rem;
+}
+
+.foto {
+  width: 220px;
+  height: 220px;
+  object-fit: cover;
+  border: 4px solid var(--morado);
+  box-shadow: 0 0 25px rgba(139, 92, 246, 0.55);
+}
+
+.hero .lead {
+  color: var(--texto-suave);
+}
+
+.etiqueta {
+  display: inline-block;
+  font-family: Consolas, "Courier New", monospace;
+  font-size: 0.85rem;
+  color: var(--morado-claro);
+  border: 1px solid var(--morado);
+  border-radius: 20px;
+  padding: 2px 12px;
+  margin-bottom: 0.75rem;
+}
+
+/* Tarjetas */
+.tarjeta {
+  background: var(--superficie);
+  border: 1px solid var(--borde);
+  border-radius: 12px;
+  padding: 1.5rem;
+  height: 100%;
+  transition: transform 0.2s, border-color 0.2s, box-shadow 0.2s;
+}
+
+.tarjeta:hover {
+  transform: translateY(-4px);
+  border-color: var(--morado);
+  box-shadow: 0 6px 20px rgba(139, 92, 246, 0.25);
+}
+
+.tarjeta h2,
+.tarjeta h3 {
+  margin-top: 0;
+}
+
+.tarjeta p {
+  color: var(--texto-suave);
+}
+
+/* Habilidades */
+.habilidades li {
+  padding: 5px 0;
+}
+
+.habilidades i {
+  width: 28px;
+  color: var(--morado);
+}
+
+/* Botones */
+.btn-primary {
+  background-color: var(--morado);
+  border-color: var(--morado);
+}
+
+.btn-primary:hover,
+.btn-primary:focus {
+  background-color: #7c3aed;
+  border-color: #7c3aed;
+}
+
+/* Modal */
+.modal-content {
+  background: var(--superficie);
+  border: 1px solid var(--morado);
+}
+
+/* Pie de página */
+footer {
+  background: #0a0712;
+  border-top: 1px solid var(--morado);
+  color: var(--texto-suave);
+}
+
+footer a {
+  color: var(--texto);
+  text-decoration: none;
+}
+
+footer a:hover {
+  color: var(--morado-claro);
+}
