@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="es" data-bs-theme="dark">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Proyectos de Jhonatan Ciro">
+  <title>Proyectos | Jhonatan Ciro</title>
+  <link rel="stylesheet" href="css/bootstrap.min.css">
+  <link rel="stylesheet" href="css/all.min.css">
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body class="d-flex flex-column min-vh-100">
+
+  <nav class="navbar navbar-expand-sm navbar-dark">
+    <div class="container">
+      <a class="navbar-brand fw-bold" href="index.html">&lt;/JC&gt;</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#menu">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="menu">
+        <div class="navbar-nav ms-auto">
+          <a class="nav-link" href="index.html">Inicio</a>
+          <a class="nav-link active" href="projects.html">Proyectos</a>
+        </div>
+      </div>
+    </div>
+  </nav>
+
+  <main class="container my-5 flex-grow-1">
+    <h2 class="mb-4">Mis Proyectos</h2>
+
+    <div class="row g-4">
+      <div class="col-md-6 col-lg-4">
+        <div class="tarjeta">
+          <h3 class="h4"><i class="fa-brands fa-python"></i> Sistema de biblioteca</h3>
+          <p>Aplicación de escritorio en Python con interfaz tkinter y base de datos SQLite para gestionar libros y préstamos.</p>
+          <button type="button" class="btn btn-primary btn-video" data-titulo="Video: Sistema de biblioteca" data-video="lWAwPyupG6o"><i class="fa-solid fa-play"></i> Ver Video</button>
+        </div>
+      </div>
+
+      <div class="col-md-6 col-lg-4">
+        <div class="tarjeta">
+          <h3 class="h4"><i class="fa-solid fa-users"></i> CRUD de empleados</h3>
+          <p>Aplicación en Python con tkinter y SQLite para crear, consultar, actualizar y eliminar empleados.</p>
+          <button type="button" class="btn btn-primary btn-video" data-titulo="Video: CRUD de empleados" data-video="AzNYLIhFnb8"><i class="fa-solid fa-play"></i> Ver Video</button>
+        </div>
+      </div>
+
+      <div class="col-md-6 col-lg-4">
+        <div class="tarjeta">
+          <h3 class="h4"><i class="fa-solid fa-file-invoice"></i> Sistema de facturación</h3>
+          <p>Pantallas de un sistema de facturación hechas en C# con Windows Forms para el curso de Herramientas de programación III.</p>
+          <button type="button" class="btn btn-primary btn-video" data-titulo="Video: Sistema de facturación" data-video="PaWOyjAeAmg"><i class="fa-solid fa-play"></i> Ver Video</button>
+        </div>
+      </div>
+    </div>
+  </main>
+
+  <div class="modal fade" id="modalVideo" tabindex="-1" aria-hidden="true">
+    <div class="modal-dialog modal-lg modal-dialog-centered">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="modalTitulo">Video del proyecto</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Cerrar"></button>
+        </div>
+        <div class="modal-body">
+          <div class="ratio ratio-16x9">
+            <iframe id="videoFrame" src="" title="Video del proyecto" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+          </div>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <footer class="py-3 mt-4">
+    <div class="container text-center">
+      <p class="mb-1">
+        <a href="mailto:jhonatan.ciro869@pascualbravo.edu.co" class="me-3"><i class="fa-solid fa-envelope"></i> jhonatan.ciro869@pascualbravo.edu.co</a>
+        <a href="https://github.com/JhonatanCiro" target="_blank"><i class="fa-brands fa-github"></i> GitHub</a>
+      </p>
+      <small>&copy; 2026 Jhonatan Ciro</small>
+    </div>
+  </footer>
+
+  <script src="js/jquery.min.js"></script>
+  <script src="js/bootstrap.bundle.min.js"></script>
+  <script src="js/scripts.js"></script>
+</body>
+</html>
